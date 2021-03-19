@@ -1,11 +1,14 @@
 {
-  "name": "vue-cli-test-project",
-  "version": "0.1.0",
-  "private": true,
+  "name": "jl-ui-test",
+  "version": "1.0.2",
+  "private": false,
+  "main": "lib/jl-ui-test.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name jl-ui-test --dest lib packages/index.js",
+    "pack": "npm run lib && npm pack"
   },
   "dependencies": {
     "core-js": "^3.6.5",
